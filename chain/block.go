@@ -5,9 +5,13 @@ import (
 	"crypto/sha256"
 )
 
+// Blockchain structure
+
 type BlockChain struct {
 	Blocks []*Block
 }
+
+// Block structure
 
 type Block struct {
 	Hash     []byte
@@ -39,5 +43,5 @@ func Genesis() *Block {
 }
 
 func InitBlockChain() *BlockChain {
-	return &BlockChain{[]*Block{Genesis()}}
+	return &BlockChain{[]*Block{Genesis()}} // Initializes the blockchain by running the function to create the Genesis block
 }

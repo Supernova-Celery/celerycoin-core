@@ -9,7 +9,9 @@ import (
 )
 
 func main() {
-	chain := chain.InitBlockChain()
+	chain := chain.InitBlockChain() // Initializing the blockchain
+
+	// Creating the first three blocks after the Genesis block
 
 	chain.AddBlock("First block after Genesis")
 	chain.AddBlock("Second block after Genesis")
